@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  monospace;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("a.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    width:90%;
+
+    margin: auto;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 120px;
+}
+/* li =relativ
+
+a =position: absolute; banako */
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+    font-size: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: darkblue;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+
+}
+.content{
+    
+    position: absolute;
+    width: 100%;
+    top:50%;
+    text-align:center;
+    color:white;
+
+}
+
+.content p{
+    margin: 20px 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+
+
+}
+button{
+    width:200px;
+    padding: 15px 0;
+     text-align: center;
+     margin: 10px;
+     border-radius:25px;
+     font-weight: bold;
+     border: 2px solid;
+     background: transparent;
+     color: white;
+     cursor: pointer;
+     position: relative;
+}
+
+span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    border-radius: 25px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: white ;
+    color:darkblue
+
+
+}
+.icon{
+    color: white;
+    font-size: 40px;
+}
