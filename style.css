@@ -125,6 +125,7 @@ button:hover{
 .project h1{
     color: white ;
     padding-top:60px;
+    font-size: 60px;
 }
 .project p{
     color: white;
@@ -166,6 +167,7 @@ button:hover{
     text-align: center;
     color: white;
     padding-top: 65px;
+    font-size: 60px;
 
 }
 .contactme{
@@ -189,3 +191,37 @@ button:hover{
     margin-top: 150px;
 }
 
+.about{
+        background-color: #005aa6;
+        width: 100;
+        height: 100;
+        display:flex;
+}
+.forimage{
+    display: inline-block;
+    height:600px;
+    width: 40%;
+    background-color: azure;
+    margin-top: 55px;
+    margin-left:20px ;
+}
+.information{
+    display: inline-block;
+    width:40%;
+    margin-top: 55px;
+}
+.forimage img{
+    height: 600px;
+    width: 600px;
+}
+
+.information h2{
+    padding: 50px;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+pre{
+    color: white;
+    font-size: larger;
+}
